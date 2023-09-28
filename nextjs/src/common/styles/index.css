@@ -1,0 +1,28 @@
+/* @import url(github-markdown-css/github-markdown.css); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: aliceblue;
+}
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background-color: inherit;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0px;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background-color: #d31400;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #d3140000;
+  border-radius: 0px;
+}
+*::-webkit-scrollbar-corner {
+  background-color: inherit;
+  visibility: visible;
+}

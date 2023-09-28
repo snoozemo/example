@@ -1,0 +1,28 @@
+@keyframes text-marquee {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-75%);
+    -webkit-transform: translateX(-75%);
+    transform: translateX(-75%);
+  }
+}
+@keyframes p5-button-hover {
+  0% {
+    transform: rotateX(20deg) rotateY(-20deg) rotateZ(-10deg) skew(30deg, 10deg);
+  }
+  35% {
+    transform: rotateY(15deg) rotateX(-15deg) rotateZ(-5deg) skew(25deg, 5deg)
+      scale(1, 1.4);
+  }
+  65% {
+    transform: rotateY(-50deg) rotateX(-20deg) rotateZ(-10deg)
+      skew(-40deg, 10deg) scale(1.2, 1);
+  }
+  100% {
+    transform: rotateX(20deg) rotateY(-20deg) rotateZ(-10deg) skew(30deg, 10deg);
+  }
+}
