@@ -1,0 +1,29 @@
+{
+  "name": "@snoozemo/types",
+  "version": "0.0.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "upgrade": "ncu -u && pnpm i"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.28",
+    "del-cli": "5.0.0",
+    "typescript": "5.0.2"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0.25"
+  }
+}

@@ -1,0 +1,21 @@
+# MacOS
+.DS_Store
+
+# Dependency directories
+node_modules/
+# Turborepo
+.turbo
+.cache
+
+# Build
+dist/
+
+# Logs
+.pnpm-debug.log*
+
+.eslintcache
+
+#idea
+.idea
+
+.vercel

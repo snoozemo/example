@@ -1,0 +1,23 @@
+.layout-menu {
+
+  &.ant-menu,
+  & .ant-menu {
+    @apply  !bg-transparent select-none;
+    border-inline-end: none !important;
+  }
+
+  .ant-menu-item-selected {
+    @apply shadow;
+  }
+
+  .ant-menu.ant-menu-sub.ant-menu-inline {
+    @apply  !bg-transparent;
+  }
+
+}
+
+.layout-header {
+  &.ant-layout-header {
+    padding-inline: 28px 24px;
+  }
+}

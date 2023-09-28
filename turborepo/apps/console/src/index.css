@@ -1,0 +1,5 @@
+@import url(nprogress/nprogress.css);
+@import url(@/styles/tailwind.css);
+@import url(@/styles/antd.css);
+@import url(@/styles/global.css);
+@import url(github-markdown-css/github-markdown.css);

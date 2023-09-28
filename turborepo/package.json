@@ -1,0 +1,48 @@
+{
+  "name": "snoozemo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --no-daemon",
+    "build:blog": "turbo run build --no-daemon --filter=@snoozemo/blog...",
+    "build:console": "turbo run build --no-daemon --filter=@snoozemo/console...",
+    "build:server": "turbo run build --no-daemon --filter=@snoozemo/server...",
+    "dev": "turbo run dev --no-daemon",
+    "dev:blog": "turbo run dev --no-daemon --filter=@snoozemo/blog...",
+    "dev:console": "turbo run dev --no-daemon --filter @snoozemo/console...",
+    "dev:server": "turbo run dev --no-daemon --filter @snoozemo/server...",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "preinstall": "npx only-allow pnpm",
+    "lint": "turbo run lint",
+    "upgrade": "turbo run upgrade --no-daemon"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "8.0.3",
+    "prettier": "latest",
+    "prettier-plugin-packagejson": "2.4.3",
+    "prettier-plugin-tailwindcss": "0.2.6",
+    "turbo": "1.8.8",
+    "typescript": "5.0.3"
+  },
+  "packageManager": "pnpm@7.17.1",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

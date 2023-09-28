@@ -1,0 +1,53 @@
+# global
+*.DS_Store
+bin/
+obj/
+.vscode/
+.vs/
+.idea
+.ws
+
+# Rider
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+*.sln.iml
+
+# web
+node_modules/
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
